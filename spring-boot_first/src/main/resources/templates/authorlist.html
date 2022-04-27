@@ -1,0 +1,26 @@
+<html xmlns:th="https://thymeleaf.org">
+<head>
+
+<title>
+</title>
+</head>
+<body>
+<table align="center">
+<tr>
+<th>Author Id</th>
+<th>Author Name</th>
+<th>Email</th>
+</tr>
+<tr th:each="data:${alist}">
+<td th:text=${data.auid}></td>
+<td th:text=${data.author_name}></td>
+<td th:text=${data.email}></td>
+<td><a href="edit">Edit user</a> || <a href="delauthor">Delete Author</a></td>
+<!-- <li><a href="showallauthor">See All Author</a></li> -->
+</tr>
+
+</table>
+</body>
+
+</html >
+
